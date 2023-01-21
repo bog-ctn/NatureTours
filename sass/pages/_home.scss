@@ -1,0 +1,99 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  @include respond(tab-por) {
+    margin-top: -18vh;
+    padding: 20rem 0;
+  }
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(#7ed56f, 0.6),
+      rgba(#28b485, 0.6)
+    ),
+    url('../img/nat-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -10rem;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+  @include respond(tab-por) {
+    padding: 10rem 0;
+  }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+  @include respond(tab-por) {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+.section-stories {
+  padding: 15rem 0;
+
+  position: relative;
+  @include respond(tab-por) {
+    padding: 10rem 0;
+  }
+}
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  @include respond(tab-por) {
+    padding: 10rem 0;
+  }
+}
+
+.book {
+  background: linear-gradient(
+      105deg,
+      rgba($color-white, 0.8) 50%,
+      transparent 50%
+    ),
+    url('../img/nat-10.jpg') no-repeat center center/cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  @include respond(tab-land) {
+    background: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 65%,
+        transparent 65%
+      ),
+      url('../img/nat-10.jpg') no-repeat center center/cover;
+  }
+  @include respond(tab-por) {
+    background: linear-gradient(
+        to right,
+        rgba($color-white, 0.8) 100%,
+        transparent 100%
+      ),
+      url('../img/nat-10.jpg') no-repeat center center/cover;
+  }
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-por) {
+      width: 100%;
+    }
+  }
+}
